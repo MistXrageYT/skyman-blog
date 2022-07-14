@@ -11,8 +11,8 @@ interface Props {
 
 function contentPage({ post }: Props) {
     return (
-
-
+        
+        
         <main>
 
             <Head>
@@ -43,7 +43,8 @@ function contentPage({ post }: Props) {
                 <div className='mt-10'>
 
                     <div>
-                    <iframe width="560" height="315" src={post.embed} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                    <iframe width="autu" height="auto" src={post.embed} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                    <br />
                     </div>
                     <PortableText className=''
                         dataset={process.env.NEXT_PUBLIC_SANITY_DATASET!}
@@ -54,6 +55,7 @@ function contentPage({ post }: Props) {
                             h2: (props: any) => <h2 className='text-xl font-bold my-5' {...props} />,
                             li: ({ children }: any) => <li className="ml-4 list-disc">{children}</li>,
                             link: ({ href, children }: any) => <a href={href} className="text-blue-500 hover:underline">{children}</a>,
+                            
                             someCustomType: contentPage,
                         }}
                     />
