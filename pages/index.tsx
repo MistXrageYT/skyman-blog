@@ -17,27 +17,17 @@ interface Props {
 
 export default function Home({ posts }: Props) {
   return (
-    <div className='max-w-7xl mx-auto'>
+    <div>
+      <div className='mx-auto'>
+      <Header />
+      <hr className="py-0"/>
       <Head>
         <title>SkyMan : Offical Website</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header />
-
-      <div className='flex justify-between items-center bg-yellow-400 border-y border-black py-10 lg:py-0'>
-        <div className='px-10 space-y-5'>
-          <h1 className='text-6xl max-w-xl font-serif'><span className='underline decoration-black'>Skyman Films</span> Production</h1>
-          <h2>Are You An Arist? Why Dont Join Us (A Music Company Which Make Video, Song & More)</h2>
-        </div>
-        <img
-          className="hidden h-32 md:inline-flex lg:h-full"
-          src="/logo.png"
-          alt="medium-logo"
-        />
-        </div>
 
         {/* post */}
-        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-6 p-2 md:p-6'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-6 p-2 md:p-6 max-w-7xl'>
 
 
           
@@ -70,6 +60,7 @@ export default function Home({ posts }: Props) {
           ))}
         </div>
 
+        </div>
         <Footer />
         
     </div>
