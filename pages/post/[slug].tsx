@@ -47,10 +47,10 @@ function contentPage({ post }: Props) {
                         projectId={process.env.SANITY_PROJECT_ID!}
                         content={post.body}
                         serializers={{
-                            h1: (props: any) => <h1 className='text-2xl font-bold my-5' {...props} />,
-                            h2: (props: any) => <h2 className='text-xl font-bold my-5' {...props} />,
+                            h1: (props: any) => <h1 className='text-2xl font-bold my-5 break-normal' {...props} />,
+                            h2: (props: any) => <h2 className='text-xl font-bold my-5 break-normal' {...props} />,
                             li: ({ children }: any) => <li className="ml-4 list-disc">{children}</li>,
-                            link: ({ href, children }: any) => <a href={href} className="text-blue-500 overflow-hidden hover:underline">{children}</a>,
+                            link: ({ href, children }: any) => <a href={href} className="text-blue-500 break-normal hover:underline">{children}</a>,
                             someCustomType: contentPage,
                         }}
                     />
