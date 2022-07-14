@@ -49,7 +49,7 @@ function contentPage({ post }: Props) {
                             h1: (props: any) => <h1 className='text-2xl font-bold my-5' {...props} />,
                             h2: (props: any) => <h2 className='text-xl font-bold my-5' {...props} />,
                             li: ({ children }: any) => <li className="ml-4 list-disc">{children}</li>,
-                            link: ({ href, children }: any) => <a href={href} className="text-blue-500 hover:underline">{children}</a>,
+                            link: ({ href, children }: any) => <a href={href} className="text-blue-500 overflow-hidden hover:underline">{children}</a>,
                             someCustomType: contentPage,
                         }}
                     />
