@@ -5,7 +5,7 @@ function Header() {
         <header className="flex justify-between p-5 max-w-7xl mx-auto">
             <div className="flex items-center space-x-5">
                 <Link href='/'>
-                    <h1 className='w-44 object-contain cursor-pointer font-serif text-2xl font-bold'>SkyMan Films</h1>
+                    <h1 className='w-44 object-contain cursor-pointer font-serif text-2xl font-bold'>SkyMan</h1>
 
                 </Link>
             </div>
