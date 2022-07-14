@@ -42,7 +42,7 @@ export default function Home({ posts }: Props) {
               <div className='flex justify-between p-5 bg-white'>
 
               <div>
-              <p className='text-lg font-bold'>{post.title}</p>
+              <p className='text-lg font-bold line-clamp-1'>{post.title}</p>
               <p className='text-xs font-medium line-clamp-1'>{post.description}</p>
               <p className='text-xs font-light'>By {post.author.name}</p>
               </div>
