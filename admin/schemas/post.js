@@ -53,6 +53,11 @@ export default {
       type: 'blockContent',
     },
     {
+      name: 'embed',
+      title: 'Youtube Video',
+      type: 'url',
+    },
+    {
       name: 'tags',
       title: 'Tags',
       type: 'string',
