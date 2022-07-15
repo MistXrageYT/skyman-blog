@@ -63,6 +63,8 @@ function contentPage({ post }: Props) {
 
 
             </article>
+            
+            <Footer />
 
         </main>
     )
