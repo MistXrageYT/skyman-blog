@@ -23,6 +23,7 @@ export default function Home({ posts }: Props) {
       <hr className="py-0"/>
       <Head>
         <title>SkyMan : Offical Website</title>
+        <meta name="google-site-verification" content="dytKm4REFtZvcI_5x1YOSvPn7bMmz4_3noGICI-pBQg" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
