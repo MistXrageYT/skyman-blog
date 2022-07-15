@@ -2,6 +2,7 @@ import { GetStaticProps } from 'next'
 import Head from 'next/head'
 import PortableText from 'react-portable-text'
 import Header from '../../components/Header'
+import Footer from '../../components/Footer'
 import { sanityClient, urlFor } from '../../sanity'
 import { Post } from '../../typings'
 
